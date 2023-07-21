@@ -1,8 +1,9 @@
 
 
 {{-- HEADER --}}
-@section('title','TITI')
-@extends('front/layouts/header')
+
+@section('title','Home PAGE post list')
+@include('front/layouts/header')
 
 {{-- FIN HEADER --}}
 
@@ -18,7 +19,7 @@
 			 @for ($i = 0; $i < 20; $i++)
        <article class="flex flex-col rounded bg-gray-100">
 
-				<a href="#" title="Titulo">
+				<a href="/video/Mia-khaslifa-1232" title="Titulo">
 					<img alt="Titutlo" class="thumb object-cover w-full h-52 bg-gray-500" src="https://source.unsplash.com/200x200/?love?{{ $i }}">
 				
 	 

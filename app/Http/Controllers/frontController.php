@@ -9,4 +9,7 @@ class frontController extends Controller
     public function index(){
         return view('front/inicio');
     }
+    public function video(){
+        return view('front/video');
+    }
 }
