@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'Dashboard GospelAdultScript',
+    'title' => '',
     'title_prefix' => '',
-    'title_postfix' => '',
+    'title_postfix' => 'Dashboard GospelAdultScript',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     */
 
     'logo' => '<b>Gospel</b>AdultScript',
-    'logo_img' => 'https://i.imgur.com/LAiTbAS_d.webp',
+    'logo_img' => 'https://i.imgur.com/GqAgrS7.jpg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -86,7 +86,7 @@ return [
     'auth_logo' => [
         'enabled' => false,
         'img' => [
-            'path' => 'https://i.imgur.com/LAiTbAS_d.webp',
+            'path' => 'https://i.imgur.com/GqAgrS7.jpg',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 100,
@@ -109,7 +109,7 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'https://i.imgur.com/LAiTbAS_d.webp',
+            'path' => 'https://i.imgur.com/GqAgrS7.jpg',
             'alt' => 'GOSPEL ADMIN',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -168,9 +168,9 @@ return [
     */
 
     'classes_auth_card' => 'card-outline card-primary',
-    'classes_auth_header' => '',
+    'classes_auth_header' => 'd-none',
     'classes_auth_body' => '',
-    'classes_auth_footer' => '',
+    'classes_auth_footer' => 'd-none',
     'classes_auth_icon' => '',
     'classes_auth_btn' => 'btn-flat btn-primary',
 
@@ -187,14 +187,14 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => '',
+    'classes_brand' => 'bg-blue',
     'classes_brand_text' => '',
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-light-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-grey navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -290,16 +290,7 @@ return [
     */
 
     'menu' => [
-        // Navbar items:
-        [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type'         => 'fullscreen-widget',
-            'topnav_right' => true,
-        ],
+       
 
         // Sidebar items:
       
@@ -325,9 +316,9 @@ return [
         ],
         [
             'text' => 'Categorias',
-            'url'  => 'admin/settings',
+            'url'  => 'admin/categorias',
             'icon' => 'fas fa-fw fa-bars',
-            'icon_color' => 'white  '
+            'icon_color' => 'black'
         ],
         [
             'text'    => 'Configuración',
@@ -337,18 +328,18 @@ return [
                 [
                     'text' => 'General',
                     'url'  => '#',
-                    'icon'    => 'fas fa-fw fa-wrench',
+                    'icon'    => 'fas fa-cogs',
                     'icon_color' => 'yellow',
                 ],
                 [
                     'text'    => 'Publicidad',
                     'url'     => '#',
-                    'icon'    => 'fas fa-fw fa-wrench',
+                    'icon'    => 'fas fa-cogs',
                     'icon_color' => 'blue',
                 ],
                 [
                     'text' => 'SEO',
-                    'icon'    => 'fas fa-fw fa-wrench',
+                    'icon'    => 'fas fa-cogs',
                     'url'  => '#',
                     'icon_color' => 'red',
                 ],

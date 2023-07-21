@@ -13,7 +13,7 @@
     <div class="bg-blue-500 text-white">A</div>
     <div class="bg-red-500">B</div>
     <div class="bg-blue-500">C</div>
-    <div class="bg-blue-500">D</div>
+    <div class="bg-yellow-900">D</div>
   </div>
 </body>
 </html>

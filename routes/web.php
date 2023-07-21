@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
 });
 
 Auth::routes();
@@ -23,10 +23,21 @@ Route::get('/VIDEO',function(){
     return "hola";
 });
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
 
-Route::get('/home', function() {
-    return view('home');
-})->name('home')->middleware('auth');
+
+
+
+
+//DASHBOARD URLs 
+Route::get('/admin', [App\Http\Controllers\dashController::class, 'index'])->name('home');
+Route::get('/admin/videos', [App\Http\Controllers\dashController::class, 'videos'])->name('videos');
+Route::get('/admin/pornstars', [App\Http\Controllers\dashController::class, 'stars'])->name('stars');
+Route::get('/admin/categorias', [App\Http\Controllers\dashController::class, 'categorias'])->name('categorias');
+Route::get('/admin/config/general', [App\Http\Controllers\dashController::class, 'config'])->name('config');
+Route::get('/admin/config/publicidad', [App\Http\Controllers\dashController::class, 'ads_config'])->name('publicidad');
+Route::get('/admin/config/SEO', [App\Http\Controllers\dashController::class, 'seo'])->name('seo');
+
+
+
+
