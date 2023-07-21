@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo_main{
+ width: 190px;
+ height: 37px;
+}
+.videolist{
+   
+}

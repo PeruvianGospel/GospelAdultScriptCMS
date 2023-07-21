@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\frontController::class, 'index'])->name('inicio');
+Route::get('video/{id}',[App\Http\Controllers\frontController::class, 'video'])->name('video');
 
 
 
