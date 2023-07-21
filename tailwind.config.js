@@ -2,12 +2,17 @@
 export default {
   content: [
     "./resources/**/*.blade.php",
+    "./resources/**/**/*.blade.php",
+    "./resources/**/**/**/*.blade.php",
     "./resources/**/*.js",
+    "./resources/js/*.js",
     "./resources/**/*.vue",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class"
 }
 

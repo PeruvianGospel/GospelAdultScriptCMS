@@ -10,12 +10,13 @@
 
 <body>
 {{-- CUERPO DE PAGINA --}}
-<div class="container mx-auto">
+<div class="container mb-4 mx-1 sm:mx-auto">
+
     <div class="playervideo grid grid-rows-12 grid-cols-8">   
         <div class="titulo col-span-8 row-span-2">
             <h1 class="font-bold text-3xl ">Titutlo del videoTitutlo del videoTitutlo del video</h1>
         </div>
-        <div class="player col-span-8 md:col-span-6 row-span-10">
+        <div class="player col-span-8 md:col-span-8 lg:col-span-6 row-span-10">
             <iframe src="https://www.xvideos.com/embedframe/77597717" frameborder=0 width=auto height=auto scrolling=no allowfullscreen=allowfullscreen></iframe>
       
             <div class="info p-5">
@@ -25,9 +26,7 @@
                     @include('front/layouts/tabs')
                 {{-- FIN TABS --}}
 
-                <span itemscope="description">
-                    TEST
-                </span>
+                
             </div>  
         </div>
         
@@ -47,7 +46,11 @@
         </div>
        
     </div>
+    {{-- RELATED VIDEOS --}}
+    @include('front/layouts/randomvideos')
 </div>
+
+
 {{-- FIN DE CUERPO DE PAGINA --}}
 </body>
 
