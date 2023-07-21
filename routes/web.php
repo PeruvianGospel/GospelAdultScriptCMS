@@ -13,30 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('inicio');
-});
+Route::get('/', [App\Http\Controllers\frontController::class, 'index'])->name('inicio');
+
+
 
 Auth::routes();
 
-Route::get('/VIDEO',function(){
-    return "hola";
-});
 
 
 
-
-
-
-
-//DASHBOARD URLs 
-Route::get('/admin', [App\Http\Controllers\dashController::class, 'index'])->name('home');
-Route::get('/admin/videos', [App\Http\Controllers\dashController::class, 'videos'])->name('videos');
-Route::get('/admin/pornstars', [App\Http\Controllers\dashController::class, 'stars'])->name('stars');
-Route::get('/admin/categorias', [App\Http\Controllers\dashController::class, 'categorias'])->name('categorias');
-Route::get('/admin/config/general', [App\Http\Controllers\dashController::class, 'config'])->name('config');
-Route::get('/admin/config/publicidad', [App\Http\Controllers\dashController::class, 'ads_config'])->name('publicidad');
-Route::get('/admin/config/SEO', [App\Http\Controllers\dashController::class, 'seo'])->name('seo');
 
 
 
