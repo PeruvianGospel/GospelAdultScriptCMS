@@ -10,12 +10,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
-
-
-
-
-
 //DASHBOARD URLs 
 Route::get('/', [App\Http\Controllers\dashController::class, 'index'])->name('home');
 Route::get('/videos', [App\Http\Controllers\dashController::class, 'videos'])->name('videos');

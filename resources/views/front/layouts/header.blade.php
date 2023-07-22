@@ -14,7 +14,7 @@
 
 <header class="p-4 bg-gray-100 text-gray-800">
 	<div class="flex justify-between h-16 mx-auto">
-		<a href="#"  class="flex items-center p-2">
+		<a href="."  class="flex items-center p-2">
 			<img src="https://imgur.com/K34jPzd.png" class="logo_main">
 		</a>
 		<ul class="items-stretch hidden space-x-3 md:flex">

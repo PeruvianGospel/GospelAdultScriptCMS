@@ -24,9 +24,7 @@
 
                 {{-- TABS --}}
                     @include('front/layouts/tabs')
-                {{-- FIN TABS --}}
-
-                
+                {{-- FIN TABS --}}           
             </div>  
         </div>
         
@@ -49,8 +47,6 @@
     {{-- RELATED VIDEOS --}}
     @include('front/layouts/randomvideos')
 </div>
-
-
 {{-- FIN DE CUERPO DE PAGINA --}}
 </body>
 
