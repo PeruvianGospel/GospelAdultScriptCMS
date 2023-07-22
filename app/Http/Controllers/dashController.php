@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\video;
 class dashController extends Controller
 {
     /**
@@ -25,9 +25,18 @@ class dashController extends Controller
     {
         return view('dashboard/dashboard');
     }
+
+
+    /** GESTION DE VIDEOS Y PUBLICACION  */
     public function videos(){
-        return view('dashboard/videos');
+        $videos = video::paginate(10);
+        return view('dashboard/videos')->with('videos',$videos);
     }
+
+    public function publicar_video(){
+        return view('dashboard/publicar_video');    
+    }
+    /** FIN GESTION DE VIDEO Y PUBLICACION  */
     public function stars(){
         return view('dashboard/pornstar');
     }
@@ -35,3 +44,6 @@ class dashController extends Controller
         return view('dashboard/categorias');
     }
 }
+
+
+

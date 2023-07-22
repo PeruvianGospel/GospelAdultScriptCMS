@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');         
             $table->string('description');
+            $table->string('img');
             $table->string('embed');
             $table->string('category');
             $table->string('tags');

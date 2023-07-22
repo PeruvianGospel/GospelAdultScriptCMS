@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 //DASHBOARD URLs 
 Route::get('/', [App\Http\Controllers\dashController::class, 'index'])->name('home');
 Route::get('/videos', [App\Http\Controllers\dashController::class, 'videos'])->name('videos');
+Route::get('/video/publicar', [App\Http\Controllers\dashController::class, 'publicar_video'])->name('publicar');
 Route::get('/pornstars', [App\Http\Controllers\dashController::class, 'stars'])->name('stars');
 Route::get('/categorias', [App\Http\Controllers\dashController::class, 'categorias'])->name('categorias');
 Route::get('/config/general', [App\Http\Controllers\dashController::class, 'config'])->name('config');

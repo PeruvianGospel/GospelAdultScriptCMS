@@ -304,7 +304,22 @@ return [
             'text'        => 'Videos',
             'url'         => 'admin/videos',
             'icon'        => 'fas fa-fw fa-film',
-            'icon_color' => 'red'
+            'icon_color'  => 'red',
+            'submenu'     => [
+                [
+                    'text' => 'Publicados',
+                    'url'  => 'admin/videos',
+                    'icon'        => 'fas fa-fw fa-list',
+                    'icon_color'  => 'blue',
+                ],
+                [
+                    'text' => 'Publicar nuevo',
+                    'url'  => 'admin/video/publicar',
+                    'icon'        => 'fas fa-fw fa-pen-nib',
+                    'icon_color'  => 'blue',
+                ],
+            ]
+            
         
         ],
        
